@@ -1,0 +1,50 @@
+<!-- 更新日時1/27 -->
+
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <title>gungi</title>
+    <script src="./p5.js"></script>
+    <!-- <script src="p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- C01. Socket.IOクライアントライブラリの読み込み -->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <meta charset="utf-8" />
+  </head>
+
+  <body style="background-color: azure;">
+    <main>
+    </main>
+    <script src="./gungi.js"></script>
+    <div id="P5canvas"></div>
+
+    <!-- どちらの順番か表示する場所 -->
+    <div id="box">
+      <!-- ターンの変数入れる -->
+      <p id="turn">
+        待機中...
+      </p>
+    </div>
+
+    <!-- 追加（勝ち負け） -->
+    <div id="end_turn">
+      <p id="finish">
+        <!-- どちらの勝利？ -->
+      </p>
+    </div>
+    
+    
+    <!-- ルール説明部分 -->
+    <div class="box27">
+      <span class="box-title">ルール</span>
+      <p id="ww">
+        ・師（スイ）を先に取ったプレイヤーの勝利<br>
+        ・駒は自駒を含め、他の駒を飛び越えて動けない<br>
+        ・師は他の駒に乗られることはない<br>
+        ・利きのある場所に敵駒があるときは取るor乗るの選択をすることができる（自駒は乗るのみ）<br>
+        ・取った駒は対局から除外<br>
+      </p>
+    </div>
+
+  </body>
+</html>
