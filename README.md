@@ -3,6 +3,8 @@
 1. http://localhost:7000/index.html にアクセスする(1回目)  
 これにより， 1P 側が接続される  
 サーバに ID が表示されればOK
+![スクリーンショット 2025-05-09 005646](https://github.com/user-attachments/assets/361b70fa-4769-452c-aa12-aacdcfa0880a)
+↑のような画面が表示される
 1. http://localhost:7000/index.html にアクセスする(2回目)  
 これにより， 2P 側が接続され，ゲームがスタートする
 # ルール
